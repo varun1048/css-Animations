@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .parent {
+        background-color: black;
+        width: 400px;
+        height: 400px;
+        
+    }
+    .child{
+        background-color: aqua;
+        width: 50%;
+        height: 50%;
+        /* transition: 1s; */
+    }
+
+    .parent:hover .child{
+        transform:
+            translatey(10%) 
+            translatex(10%); 
+    }
+</style>
+<body>
+    <div class="parent">
+        
+        <div class="child">
+asdf
+        </div>
+
+    </div>
+</body>
+</html>

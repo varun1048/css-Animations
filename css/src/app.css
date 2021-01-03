@@ -1,0 +1,39 @@
+.parent
+    {
+        background-color: black;
+        height: 400px;
+        width: 800px;
+    }
+
+.child 
+    {
+        background-color: aqua;
+        height: 50%;
+        width: 50%;
+        animation: l-to-r 1s ease-in-out forwards alternate infinite;
+
+    }
+
+.parent:hover .child
+    {
+        animation-play-state: paused;
+    }
+
+@keyframes l-to-r {
+    0%{
+        background-color: aqua;
+        transform: translateX(0%);
+    }
+    33%{
+        background-color: black;
+        transform: translateY(100%);
+    }
+    66%{
+        background-color: coral;
+        transform:  translateX(100%) translateY(100%); 
+    }
+    100% {
+        background-color: white;
+        transform: translateX(100%);
+    }
+}
